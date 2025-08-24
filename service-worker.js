@@ -1,7 +1,7 @@
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open("sr5e-cache").then((cache) => {
-      return cache.addAll(["/", "/index.html"]);
+      return cache.addAll(["/shadowrun-5e-sheet/index.html", "/shadowrun-5e-sheet/main.js"]);
     })
   );
 });
